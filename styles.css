@@ -1,0 +1,152 @@
+@font-face {
+    font-family: Greycliff-CF;
+    src: url("/Greycliff-CF/Demo_Fonts/Fontspring-DEMO-greycliffcf-regular.otf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Greycliff-CF;
+    src: url("/Greycliff-CF/Demo_Fonts/Fontspring-DEMO-greycliffcf-medium.otf");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Greycliff-CF;
+    src: url("/Greycliff-CF/Demo_Fonts/Fontspring-DEMO-greycliffcf-bold.otf");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: Greycliff-CF;
+    src: url("/Greycliff-CF/Demo_Fonts/Fontspring-DEMO-greycliffcf-extrabold.otf");
+    font-weight: 800;
+}
+
+/* layout */
+/* position and dimensions */
+/* margin and padding */
+/* box enhancements */
+/* font enhancements */
+/* others */
+
+
+:root {
+    --white: (#FFFFFF);
+    --black_pearl: (#1F1B24);
+    --light_slate_grey: (#868E96);
+    --aztec_jade: (#36BF8A);
+    --elite_teal: #15353D;
+
+
+}
+
+
+body {
+    font-family: Greycliff-CF;
+    font-weight: 400;
+    color: var(--black-pearl);
+    font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.625rem;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+div,
+header {
+    box-sizing: border-box;
+
+    color: var(--white)
+}
+
+.header_top {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 7.25rem;
+}
+
+.header_about_us{
+    background-image: url(/assets/Rectangle_verde_hojas.png);
+    max-width: 90rem;
+}
+
+nav{
+    
+    font-size: .875rem;
+
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+nav li{
+    display: inline-block;
+}
+
+h1{
+    margin-bottom: 1.1875rem;
+
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 3.6rem;
+    color: var(--white);
+}
+
+.header_about_us_title{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    max-width: 22.75rem;
+    margin: 0 auto 6.25rem;
+    padding-bottom: 9.9375rem;
+
+    color: var(--white);
+}
+
+.the_test_story_section{ 
+    display: flex;
+
+}
+
+
+.the_test_story_title{
+    margin-bottom: 1.25rem;
+
+    color: var(--black_pearl);
+}
+
+.the_test_story_subtitle{
+    margin-bottom: 1.25rem;
+
+    font-size: 20px;
+    line-height: 1.875rem;
+}
+
+.the_test_mission{
+    padding: 4.875rem 0 5.25rem;
+
+    text-align: center;
+    background-color: var(--elite_teal);
+
+    color: var(--white);
+}
