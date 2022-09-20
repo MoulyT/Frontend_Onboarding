@@ -1,24 +1,24 @@
 @font-face {
   font-family: Greycliff-CF;
-  src: url("/Frontend_Onboarding/Greycliff-CF/Demo_Fonts/Fontspring-DEMO-greycliffcf-regular.otf");
+  src: url("/Greycliff-CF/Demo_Fonts/Fontspring-DEMO-greycliffcf-regular.otf");
   font-weight: 400;
 }
 
 @font-face {
   font-family: Greycliff-CF;
-  src: url("/Frontend_Onboarding/Greycliff-CF/Demo_Fonts/Fontspring-DEMO-greycliffcf-medium.otf");
+  src: url("/Greycliff-CF/Demo_Fonts/Fontspring-DEMO-greycliffcf-medium.otf");
   font-weight: 500;
 }
 
 @font-face {
   font-family: Greycliff-CF;
-  src: url("/Frontend_Onboarding/Greycliff-CF/Demo_Fonts/Fontspring-DEMO-greycliffcf-bold.otf");
+  src: url("/Greycliff-CF/Demo_Fonts/Fontspring-DEMO-greycliffcf-bold.otf");
   font-weight: 700;
 }
 
 @font-face {
   font-family: Greycliff-CF;
-  src: url("/Frontend_Onboarding/Greycliff-CF/Demo_Fonts/Fontspring-DEMO-greycliffcf-extrabold.otf");
+  src: url("/Greycliff-CF/Demo_Fonts/Fontspring-DEMO-greycliffcf-extrabold.otf");
   font-weight: 800;
 }
 
@@ -28,6 +28,8 @@
 /* box enhancements */
 /* font enhancements */
 /* others */
+
+/*General setup*/
 
 :root {
   --whiteColor: (#ffffff);
@@ -65,7 +67,16 @@ a {
 div,
 header {
   box-sizing: border-box;
+}
 
+.wrapper {
+  margin: 0 auto 0;
+  max-width: 90rem;
+}
+
+/*Header*/
+
+header {
   color: #ffffff;
 }
 
@@ -74,6 +85,7 @@ header {
   justify-content: space-between;
 
   padding: 28px 3.8125rem 0 8.4375rem;
+  margin-bottom: 7rem;
 
   font-size: 0.875rem;
   font-weight: 700;
@@ -81,7 +93,7 @@ header {
 }
 
 .header_about_us {
-  background-image: url(/Frontend_Onboarding/assets/Rectangle_verde_hojas.png);
+  background-image: url(/assets/Rectangle_verde_hojas.png);
   max-width: 90rem;
 }
 
@@ -107,12 +119,20 @@ nav li {
 }
 
 h1 {
-  margin-bottom: 1.1875rem;
+  margin-bottom: 20px;
 
   font-size: 3rem;
   font-weight: 800;
   line-height: 3.6rem;
   color: var(--white);
+}
+
+h2 {
+  margin-bottom: 1.25rem;
+
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 2.75rem;
 }
 
 .header_about_us_title {
@@ -127,14 +147,27 @@ h1 {
   color: var(--white);
 }
 
+/*Section The Test Story*/
+
 .the_test_story_section {
   display: flex;
+  gap: 3.125rem;
+
+  margin-bottom: ;
+
+  color: #1f1b24;
+}
+.the_test_story_text {
+  margin-left: 8.4375rem;
+}
+
+.the_test_story_image {
+  margin-right: 8.4375rem;
+  margin-bottom: 6.25rem;
 }
 
 .the_test_story_title {
   margin-bottom: 1.25rem;
-
-  color: var(--black_pearl);
 }
 
 .the_test_story_subtitle {
@@ -144,11 +177,132 @@ h1 {
   line-height: 1.875rem;
 }
 
+.the_story_test_p1 {
+  margin-bottom: 1rem;
+}
+
+/*Section The Mission*/
+
 .the_test_mission {
-  padding: 4.875rem 0 5.25rem;
+  position: relative;
+
+  padding: 4.875rem 8.4375rem 5.25rem;
 
   text-align: center;
   background-color: var(--elite_teal);
 
-  color: var(--white);
+  color: #ffffff;
+}
+
+.hojas_svg_the_mission {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 20rem;
+  height: 16rem;
+
+  opacity: 0.4;
+}
+
+.the_test_mission_title {
+  margin-bottom: 1.25rem;
+
+  line-height: 2.4rem;
+}
+
+.the_test_mission_p {
+  margin: 0 auto 0;
+  max-width: 46.875rem;
+
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+}
+
+/* Section The Test Philosophy*/
+
+.the_test_philosophy {
+  position: relative;
+
+  padding: 9.625rem 8.4375rem 11.25rem;
+
+  background-color: #f8f9fa;
+
+  color: #1f1b24;
+}
+
+.the_test_philosophy_text {
+  max-width: 34.375rem;
+}
+
+.caja_con_circulo_img {
+  position: absolute;
+  top: -2.6875rem;
+  left: 49.6875rem;
+  width: 28.125rem;
+  height: 45rem;
+}
+
+.the_test_philosophy_title {
+  color: #1f1b24;
+}
+
+.the_test_philosophy_subtitle {
+  margin-bottom: 4.375rem;
+
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+}
+
+.the_test_philosophy_title_2 {
+  margin-bottom: 0.625rem;
+
+  font-weight: 700;
+  font-size: 1.3125rem;
+  line-height: 1.875rem;
+}
+
+.the_test_philosophy_p {
+  font-size: 1rem;
+  line-height: 1.625rem;
+}
+
+/*Section The Team*/
+
+.the_team {
+  display: grid;
+  grid-template-columns: 21.5rem 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+
+  padding: 9.625rem 8.4375rem 0;
+}
+
+.the_team_title {
+  line-height: 2.75rem;
+}
+
+.the_team_p {
+  font-size: 1rem;
+  line-height: 1.625rem;
+}
+
+.team_member_name {
+  margin-bottom: 0.25rem;
+
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.625rem;
+}
+
+.team_member_post {
+  font-size: 1rem;
+  line-height: 1.375rem;
+}
+
+.team_member_p {
+  font-size: 1rem;
+  line-height: 1.625rem;
+
+  color: #868e96;
 }
