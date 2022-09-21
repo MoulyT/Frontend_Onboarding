@@ -44,6 +44,7 @@ body {
   font-weight: 400;
 
   font-size: 16px;
+  margin: 0;
 }
 
 h1,
@@ -133,6 +134,14 @@ h1 {
   color: var(--white);
 }
 
+h2 {
+  font-weight: 800;
+  font-size: 2rem;
+  line-height: 2.75rem;
+
+  margin-bottom: 1.25rem;
+}
+
 button {
   display: inline-block;
 
@@ -147,23 +156,77 @@ button {
   color: #ffffff;
 }
 
-/*Index*/
+.button--green {
+  background-color: #36bf8a;
+  color: #e7f7f1;
+}
+
+.button--transparent {
+  background-color: transparent;
+}
+
+.supertitle {
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.125rem;
+}
+.supertitle--green {
+  color: #36bf8a;
+}
+
+.supertitle--orange {
+  color: #f26b32;
+}
+
+/*=========================================
+Index
+==========================================*/
+
+/* Header
+====================================*/
+
+.navbar {
+  width: 100%;
+  left: 0;
+
+  position: fixed;
+
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.25rem;
+  color: #ffffff;
+}
+.wrapper.wrapper--nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 3.75rem;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.button--navbar {
+  margin-left: 2rem;
+}
+
+.button__icon.button--navbar {
+  margin-left: 0.5rem;
+}
 
 .header_landing {
   display: flex;
 }
 
 .header__left {
-  fill: 50%;
-  padding: 1.625rem 3.75rem 11.75rem;
+  padding: 11.75rem 3.75rem 11.75rem;
 
   background-image: url(/assets/Rectangle_header_left.jpg);
 }
 
 .header__logo {
   display: flex;
-
-  margin-bottom: 8.875rem;
 
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -192,17 +255,79 @@ button {
   margin-top: 0.625rem;
 }
 
-.white_arrow {
+.button__icon {
   margin-left: 1rem;
+  color: white;
 }
 
 .header__right {
-  fill: 50%;
+  padding: 6.625rem 3.75rem 6.5625rem;
 
   background-color: #9bdfc5;
 }
 
-/* About_us.html*/
+/* Partneship section
+=========================================*/
+
+.partnership {
+  text-align: center;
+
+  padding: 3.75rem 3.75rem 0;
+  margin-bottom: 15.75rem;
+}
+
+.partnership__textfolder {
+  max-width: 48.125rem;
+  margin: 0 auto 2rem;
+}
+
+.partnership__p {
+  line-height: 1.875rem;
+  color: #868e96;
+}
+
+.partnership__h3 {
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.125rem;
+  margin-top: 6.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.partnership_logofolder {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 0 auto 0;
+}
+
+/* Award Card
+========================================*/
+.award_folder {
+  position: relative;
+  z-index: 1;
+  max-width: 60.625rem;
+  text-align: start;
+
+  margin: 15.75rem auto -24.875rem;
+  padding: 3rem 16.875rem 3rem 3.5rem;
+
+  border-radius: 1.25rem;
+
+  background-color: #025043;
+  color: white;
+}
+
+/* Seeds survey section
+=======================================*/
+.seeds_survey {
+  background-color: #f8f9fa;
+  padding-top: 16.875rem;
+}
+
+/* ==========================================
+About_us.html
+============================================*/
 
 .header_about_us_title {
   display: flex;
@@ -216,7 +341,8 @@ button {
   color: var(--white);
 }
 
-/*Section The Test Story*/
+/* Section The Test Story
+============================================ */
 
 .the_test_story_section {
   display: flex;
@@ -243,7 +369,8 @@ button {
   margin-bottom: 1rem;
 }
 
-/*Section The Mission*/
+/* Section The Mission
+===========================================*/
 
 .the_test_mission {
   position: relative;
@@ -282,7 +409,8 @@ button {
   line-height: 1.875rem;
 }
 
-/* Section The Test Philosophy*/
+/* Section The Test Philosophy
+==========================================*/
 
 .the_test_philosophy {
   position: relative;
@@ -330,7 +458,8 @@ button {
   line-height: 1.625rem;
 }
 
-/*Section The Team*/
+/* Section The Team
+===========================================*/
 
 .the_team {
   display: grid;
@@ -383,7 +512,8 @@ button {
   color: #868e96;
 }
 
-/*The Board*/
+/* The Board
+======================================*/
 
 .the_board {
   display: grid;
@@ -413,7 +543,8 @@ button {
   padding-right: 0;
 }
 
-/*footer*/
+/*footer
+=======================================*/
 
 footer {
   padding: 0 3.75rem 2.6875rem;
