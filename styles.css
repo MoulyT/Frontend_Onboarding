@@ -429,6 +429,7 @@ nav {
 
 .engage__p {
   line-height: 1.375rem;
+  margin-bottom: 2rem;
 }
 
 .engage__folder_img {
@@ -445,6 +446,70 @@ nav {
 
 .engage__img2 {
   margin-bottom: 2rem;
+}
+
+/*TECH DEMO 
+============================================*/
+
+.tech_demo {
+  display: flex;
+  gap: 8.75rem;
+
+  padding: 3.75rem;
+
+  background-color: #15353d;
+  color: #ffffff;
+}
+
+.tech_demo__text {
+  max-width: 35.625rem;
+  margin-left: 4.6875rem;
+}
+
+.tech_demo_title {
+  margin-bottom: 1rem;
+}
+
+.tech_demo__p {
+  margin-bottom: 1.5rem;
+}
+
+.tech_demo__green_rectangle {
+  position: relative;
+  z-index: 2;
+
+  width: 17.875rem;
+  height: 12.25rem;
+
+  border-radius: 1.5rem;
+  background-image: url(/assets/rectangle_green.png);
+  background-color: #36bf8a;
+}
+
+.tech_demo__play_icon {
+  position: absolute;
+  top: 2.4375rem;
+  left: 2.625rem;
+}
+
+.tech_demo__circle {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.tech_demo__dark_green_rectangle {
+  position: absolute;
+  z-index: 1;
+  top: 4.125rem;
+  left: 3.25rem;
+
+  height: 20.1875rem;
+  width: 30.25rem;
+
+  border-radius: 1.5rem;
+  background-color: #36bf8a;
+  opacity: 0.08;
 }
 
 /* ==========================================
@@ -669,6 +734,8 @@ About_us.html
 =======================================*/
 
 footer {
+  position: relative;
+  z-index: 2;
   padding: 0 3.75rem 2.6875rem;
 }
 
