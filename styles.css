@@ -50,7 +50,7 @@ body {
   font-family: Greycliff-CF;
   font-weight: 400;
 
-  font-size: 16px;
+  font-size: 1rem;
   margin: 0;
 }
 
@@ -168,7 +168,7 @@ button {
   color: #36bf8a;
 }
 #play_icon {
-  margin-bottom: -3px;
+  margin-bottom: -0.1875rem;
 }
 
 .button--transparent {
@@ -225,7 +225,7 @@ nav {
   margin-left: 2rem;
 }
 
-.button__icon.button--navbar {
+.button__icon--less_margin {
   margin-left: 0.5rem;
 }
 
@@ -345,6 +345,7 @@ nav {
   padding-top: 16.875rem;
   padding-left: 8.4375rem;
   padding-right: 3.75rem;
+  padding: 16.875rem 3.75rem 7.625rem 8.4375rem;
 
   background-color: #f8f9fa;
 }
@@ -381,20 +382,69 @@ nav {
 }
 
 .seeds_survey__img {
-  position: relative;
   margin-top: 2.375rem;
+}
+
+.seeds_survey__parent_grey_rectangle {
+  position: relative;
 }
 
 .seeds_survey__grey_rectangle {
   position: absolute;
-  z-index: 2;
-  top: 50px;
-  left: 0px;
+  z-index: 1;
+  top: 31.25rem;
 
   width: 37.5rem;
   height: 26.25rem;
 
-  background-color: #f26b32;
+  background-color: #f1f3f5;
+  border-radius: 1.1538rem;
+}
+
+/* Engage & Understan section
+====================================================================*/
+
+.engage {
+  position: relative;
+  z-index: 2;
+
+  padding: 5rem 0 7.5rem 3.75rem;
+
+  background-color: #15353d;
+  color: #ffffff;
+}
+
+.engage__text {
+  margin-left: 4.6875rem;
+  max-width: 25rem;
+  margin-bottom: 2rem;
+}
+
+.engage__title {
+  font-weight: 700;
+  font-size: 1.3125rem;
+  line-height: 1.875rem;
+  margin-bottom: 0.625rem;
+}
+
+.engage__p {
+  line-height: 1.375rem;
+}
+
+.engage__folder_img {
+  display: flex;
+  gap: 2rem;
+
+  overflow: hidden;
+}
+
+.engage__img1 {
+  border-radius: 1.25rem;
+  opacity: 0.95;
+}
+
+.engage__img2 {
+  margin-bottom: 2rem;
 }
 
 /* ==========================================
@@ -433,7 +483,7 @@ About_us.html
 .the_test_story_subtitle {
   margin-bottom: 1.25rem;
 
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 1.875rem;
 }
 
