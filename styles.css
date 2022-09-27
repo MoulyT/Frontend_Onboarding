@@ -292,11 +292,21 @@ nav {
   background-color: #9bdfc5;
 }
 
+.header__img {
+  width: 100%;
+}
+
 .navbar__menu_icon {
   display: none;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1200px) {
+  .header__left {
+    padding: 7.5rem 1.875rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
   .navbar__desktop_links {
     display: none;
   }
@@ -374,7 +384,7 @@ nav {
   gap: 4rem;
   max-width: 28.125rem;
 
-  margin: 0 auto 0;
+  margin: 0 auto 7.5rem;
 }
 
 @media screen and (max-width: 767px) {
@@ -429,6 +439,7 @@ nav {
 .seeds_survey {
   display: flex;
   justify-content: space-between;
+  gap: 1.25rem;
 
   padding-top: 16.875rem;
   padding-left: 8.4375rem;
@@ -476,12 +487,14 @@ nav {
 
 .seeds_survey__parent_grey_rectangle {
   position: relative;
+
+  height: fit-content;
 }
 
 .seeds_survey__grey_rectangle {
   position: absolute;
   z-index: 1;
-  top: 31.25rem;
+  bottom: -420px;
 
   width: 100%;
   height: 26.25rem;
@@ -559,11 +572,43 @@ nav {
   margin-bottom: 2rem;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1425px) {
   .engage {
     padding: 4rem 0 4rem 1.5rem;
   }
 
+  .engage__folder_img {
+    justify-content: space-between;
+
+    margin-right: 1.25rem;
+  }
+
+  .engage__img3 {
+    display: none;
+  }
+
+  .engage__p {
+    max-width: 23.125rem;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .engage {
+    padding-left: 4rem;
+  }
+
+  .engage__text {
+    margin: 0;
+  }
+  .engage__folder_img {
+    flex-direction: column;
+  }
+  .engage__img2 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
   .engage__text {
     margin-left: 0;
     padding-right: 1.5rem;
@@ -651,6 +696,12 @@ nav {
   border-radius: 1.5rem;
   background-color: #36bf8a;
   opacity: 0.08;
+}
+
+@media screen and (max-width: 1200px) {
+  .tech_demo__text {
+    margin-left: 0;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -893,7 +944,7 @@ About_us.html
 footer {
   position: relative;
   z-index: 2;
-  padding: 0 3.75rem 2.6875rem;
+  padding: 2.5rem 3.75rem 2.6875rem;
 }
 
 hr {
