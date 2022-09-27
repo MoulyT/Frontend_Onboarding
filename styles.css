@@ -193,9 +193,6 @@ button {
   color: #f26b32;
 }
 
-@media screen and (max-width: 767px) {
-}
-
 /*=========================================
 Index
 ==========================================*/
@@ -736,6 +733,11 @@ About_us.html
   color: var(--white);
 }
 
+@media screen and (max-width: 1200) {
+  .header_top {
+    padding-left: 1.5rem;
+  }
+}
 /* Section The Test Story
 ============================================ */
 
@@ -744,7 +746,6 @@ About_us.html
   gap: 3.125rem;
 
   margin: 0 8.4375rem 6.25rem;
-  margin-bottom: 6.25rem;
 
   color: #1f1b24;
 }
@@ -760,17 +761,38 @@ About_us.html
   line-height: 1.875rem;
 }
 
-.the_story_test_p1 {
+.the_story_test__p1 {
   margin-bottom: 1rem;
 }
 
+@media screen and (max-width: 1200px) {
+  .the_test_story_section {
+    flex-direction: column;
+    margin: 0 1.5rem 4rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header_about_us {
+    margin-bottom: 0;
+  }
+
+  .the_test_story_section {
+    padding: 1.5rem;
+  }
+
+  .the_test_story_image {
+    display: none;
+  }
+}
 /* Section The Mission
 ===========================================*/
 
 .the_test_mission {
   position: relative;
+  z-index: -1;
 
-  padding: 4.875rem 8.4375rem 5.25rem;
+  padding: 4.875rem 1.5rem 5.25rem;
 
   text-align: center;
   background-color: var(--elite_teal);
@@ -808,7 +830,10 @@ About_us.html
 ==========================================*/
 
 .the_test_philosophy {
-  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 6.875rem;
+  overflow: hidden;
 
   padding: 9.625rem 8.4375rem 11.25rem;
 
@@ -819,14 +844,15 @@ About_us.html
 
 .the_test_philosophy_text {
   max-width: 34.375rem;
+  min-width: 20.4375rem;
 }
 
 .caja_con_circulo_img {
-  position: absolute;
-  top: -2.6875rem;
-  left: 49.6875rem;
-  width: 28.125rem;
-  height: 45rem;
+  margin-top: -12.5rem;
+  margin-bottom: -13.75rem;
+  width: 100%;
+  aspect-ratio: 450 / 702;
+  min-width: 17rem;
 }
 
 .the_test_philosophy_title {
@@ -853,6 +879,18 @@ About_us.html
   line-height: 1.625rem;
 }
 
+@media screen and (max-width: 767px) {
+  .the_test_philosophy {
+    flex-direction: column;
+    margin-top: 24px;
+    padding: 24px;
+  }
+
+  .caja_con_circulo_img {
+    margin-top: -5rem;
+    margin-bottom: 0;
+  }
+}
 /* Section The Team
 ===========================================*/
 
@@ -907,6 +945,32 @@ About_us.html
   color: #868e96;
 }
 
+@media screen and (max-width: 1200px) {
+  .the_team {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 0.625rem;
+
+    padding: 1.5rem 0.75rem;
+  }
+  .the_team_intro {
+    grid-column: 1/3;
+    padding-right: 1.375rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .the_team {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 0.625rem;
+
+    padding: 1.5rem 0.75rem;
+  }
+  .the_team_intro {
+    grid-row: auto;
+  }
+}
 /* The Board
 ======================================*/
 
@@ -938,6 +1002,21 @@ About_us.html
   padding-right: 0;
 }
 
+@media screen and (max-width: 1200px) {
+  .the_board {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 1rem;
+
+    padding: 1.5rem 0.75rem;
+
+    margin-bottom: 1.5rem;
+  }
+
+  .test_board_title {
+    grid-column: auto;
+  }
+}
 /*footer
 =======================================*/
 
@@ -945,15 +1024,8 @@ footer {
   position: relative;
   z-index: 2;
   padding: 2.5rem 3.75rem 2.6875rem;
-}
 
-hr {
-  border: 0;
-  height: 0.0625rem;
-  background-color: #ced4da;
-  margin: 0;
-
-  margin-bottom: 1.8844rem;
+  border-top: 2px solid #ced4da;
 }
 
 .logo_container {
